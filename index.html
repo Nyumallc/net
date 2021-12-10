@@ -10,8 +10,8 @@
     <title>NYUMA購入リクエスト</title>
     <script>
       // 定数を定義する
-      const LIFF_ID = '1656691496-3mgPzBZ8'
-      const REQUEST_URL = 'https://script.google.com/macros/s/AKfycbyEui90a9O9eQyS2tsN9En-i5Vlgiy3ojpzFo1kgE3uTpmClW4nWmUUU2O1Bw680m-l/exec'
+      const LIFF_ID = '1656710789-ygJE4Wex'
+      const REQUEST_URL = 'https://script.google.com/macros/s/AKfycbyi4njPnN_sRXnaVSX_PToSmU5afYMAL41bjgKW8sQrmiX1A_LsB5mg4YxOcPa0MW4/exec'
       
     </script>
   </head>
@@ -24,14 +24,26 @@
         <div class="icon">
             <img src="" class="rounded-circle" height="50px" id="icon">
         </div>
-          <dt>URLを入力してください。</dt>
-          <br>
-          <input type="text" id="url" name="rul" required
+      <div>
+      <label>URL<br>
+      <input type="text" id="url" name="url" required
      minlength="8" maxlength="100" size="30">
-     <br />
-     <br>
-     <textarea id="option" value="備考を入力してください。（例：要泡泡梱包）" row="20" cols="40"></textarea>
-     <br />
+      </label>
+      <label>個数<br>
+        <input type="text" id="item" name="item" required
+       minlength="1" maxlength="10" size="10">
+        </label>
+        <label>価格<br>
+          <input type="text" id="yen" name="yen" required
+         minlength="1" maxlength="10" size="10">
+          </label>
+      </div>
+      <div>
+      <label>キャラクター名等の備考を入力してください。（例：要泡泡梱包）<br>
+      <textarea id="option" value="" row="20" cols="40"></textarea>
+      </label>
+      </div>
+      
 
      <input type="button" value="送信" id="submit-btn">
 
