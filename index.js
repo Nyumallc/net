@@ -7,7 +7,7 @@ function pushButton1() {
     let userid = user_id.innerHTML;
     let url = document.getElementById("url");
     let urltext = url.value;
-    let item = document.getElementById("itme");
+    let item = document.getElementById("item");
     let itemext = item.value;
     let yen = document.getElementById("yen");
     let yentext = yen.value;    
