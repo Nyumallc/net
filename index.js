@@ -21,7 +21,7 @@ function pushButton1() {
         console.log(res);
         liff.sendMessages([{
             'type': 'text',
-            'text': urltext + "の注文を受け付けました。購入まで少々お待ちください。"
+            'text': urltext + "の注文をリクエストしました。"
           }]).then(function() {
             // document.getElementById('log').value += 'sendMessagesText completed\n';
           }).catch(function(error) {
