@@ -1,5 +1,7 @@
 btn = document.getElementById("submit-btn");
 btn.setAttribute('onclick', 'pushButton1()');
+btn2 = document.getElementById("rireki-btn");
+btn2.setAttribute('onclick', 'pushButton2()');
 function pushButton1() {
     let name = document.getElementById("user-name");
     let displayname = name.innerHTML;
